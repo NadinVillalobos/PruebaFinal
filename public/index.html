@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Listado de Departamentos</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="./style.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container mt-5">
+    <h1>Listado de Departamentos</h1>
+    <div class="row mt-4">
+      <div class="col-md-3">
+        <label for="name">Nombre:</label>
+        <input type="text" class="form-control" id="name">
+      </div>
+      <div class="col-md-3">
+        <label for="groupname">Nombre del Grupo:</label>
+        <input type="text" class="form-control" id="groupname">
+      </div>
+      <div class="col-md-3">
+        <label for="startdate">Fecha de Inicio:</label>
+        <input type="date" class="form-control" id="startdate">
+      </div>
+      <div class="col-md-3">
+        <label for="enddate">Fecha de Término:</label>
+        <input type="date" class="form-control" id="enddate">
+      </div>
+    </div>
+    <div class="mt-4">
+      <button class="btn btn-primary" onclick="filtrarDepartamentos()">Filtrar</button>
+    </div>
+    <div class="mt-4" id="departamentosList"></div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./script.js"></script>
+</body>
+</html>
